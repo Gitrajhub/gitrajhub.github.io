@@ -9,11 +9,12 @@ http://www.tooplate.com/view/2109-the-card
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 19px;
-  color: #ffffff;
-  overflow-x: hidden;
-  background: #25332e;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+    overflow-x: hidden;
+    /*background: #25332e;*/
+    background: #FFFFFF;
 }
 
 a {
@@ -31,6 +32,10 @@ footer a:link, footer a:visited {
     color: #000000;
 }
 
+
+.tm-text-white {
+    color: #FFFFFF;
+}
 
 
 .tm-main-container {
@@ -96,9 +101,9 @@ footer a:link, footer a:visited {
     background: rgba(255,255,255,1.0);
 }
 
-.tab {
+/*.tab {  raj                
     margin-left: 40px;
-}
+}*/
 
 .tm-site-header-box {
   display: inline-block;
@@ -143,9 +148,17 @@ footer a:link, footer a:visited {
     line-height: 1.8;
 }
 
+./*tm-textbox {  raj duplciate
+    padding: 45px;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    line-height: 1.8;
+}*/
+
+
 .tm-textbox-2 {
     padding: 60px 40px 60px;
-    font-size: x-small;
+    font-size: small;
 }
 
 .tm-textbox-4 {
@@ -171,7 +184,7 @@ footer a:link, footer a:visited {
     font-size: x-small;
     /*margin-top: 30px;
     max-width: 4000px;*/
-    padding: 60px 40px 60px;
+    /*padding: 60px 40px 60px; */
 }
 
 .tm-link:link,
@@ -625,7 +638,7 @@ figure.effect-goliath:hover p {
 
 @media (max-width: 767px) {
     .tm-site-title {
-        font-size: 3rem;
+        /*font-size: 3rem;  raj*/
         color: #000000;
     }
   .tm-top-container {
@@ -639,6 +652,7 @@ figure.effect-goliath:hover p {
   .tm-nav {
     align-self: flex-end;
     margin-right: 40px;
+
   }
 
   .tm-nav-links {
