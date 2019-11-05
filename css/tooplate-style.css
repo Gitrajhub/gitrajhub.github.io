@@ -52,14 +52,14 @@ footer a:link, footer a:visited {
 
 .tm-navbar-menu {
   display: block;
-  color: black;
-  background: white;
-  padding: 10px 20px;
-  margin-bottom: 18px;
+  color: white;
+  background: black;
+  padding: 10px 10px;
+  margin-bottom: 10px;
   width: 95px;
   margin-right: 0;
   margin-left: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .tm-navbar-menu:hover {
@@ -68,30 +68,71 @@ footer a:link, footer a:visited {
 }
 
 .tm-nav {
-  margin: 30px;
-  text-transform: uppercase;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
 }
 
-.tm-nav-links {
-  list-style: none;
+.tm-nav .tm-nav-links {
+    margin: 0;
+    padding: 0;
 }
 
-.tm-nav-link:link,
-.tm-nav-link:visited {
-  color: black;
+
+.tm-nav .tm-nav-links .tm-nav-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.tm-nav .tm-nav-item > tm-nav-links tm-nav-item {
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+.tm-nav .tm-nav-item:hover {
+   background-color: #666;
+}
+
+
+.tm-nav .tm-nav-item:hover > tm-nav-links {
+    position: absolute;
+    display: block;
+}
+
+
+/*.tm-nav-link:link,
+.tm-nav-link:visited {*/
+  /*color: black;
   background-color: white;
   padding: 10px 40px;
   display: block;
   margin-bottom: 6px;
   text-align: center;
+}*/
+
+
+.tm-nav-item.active .tm-nav-link:link,
+.tm-nav-link:visited a {
+    color: #aaa;
+    /*background-color: #FF0;*/
+    background-color: #888;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    .tm-nav-item {
+    display: inline-block;
+    list-style-type: none;
 }
 
-.tm-nav-item.active .tm-nav-link,
+/*.tm-nav-item.active .tm-nav-link,
 .tm-nav-link:hover,
 .tm-nav-link:focus {
-  text-decoration: none;
-  color: #950000;
-}
+    text-decoration: none;
+    color: #950000;
+}*/
 
 .tm-bg-dark {
   background: rgba(0, 0, 0, 0.7);
@@ -638,7 +679,7 @@ figure.effect-goliath:hover p {
 
 @media (max-width: 767px) {
     .tm-site-title {
-        /*font-size: 3rem;  raj*/
+     font-size: 3rem; 
         color: #000000;
     }
   .tm-top-container {
